@@ -25,4 +25,8 @@ class CodeClanStudent
     return "Happy to be here!"
   end
 
+  def get_favourite_programming_language(favourite_language)
+    return "#{@name} loves #{favourite_language}"
+  end
+
 end
