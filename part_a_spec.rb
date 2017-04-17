@@ -5,12 +5,8 @@ require 'minitest/rg'
 class TestCodeClanStudent < Minitest::Test
 
 def setup
-
-
-
-
+  @student_1 = CodeClanStudent.new("Paul", 12)
 end
-
 
 
 
