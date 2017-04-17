@@ -21,4 +21,8 @@ class CodeClanStudent
     @cohort = new_cohort
   end
 
+  def make_student_talk()
+    return "Happy to be here!"
+  end
+
 end

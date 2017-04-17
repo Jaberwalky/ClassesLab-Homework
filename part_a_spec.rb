@@ -27,4 +27,8 @@ class TestCodeClanStudent < Minitest::Test
     assert_equal(10, @student_1.get_cohort)
   end
 
+  def test_make_student_talk
+    assert_equal("Happy to be here!", @student_1.make_student_talk)
+  end
+
 end
