@@ -38,8 +38,18 @@ class TestSportsTeam < Minitest::Test
   end 
 
   def test_check_if_player_is_on_team__false
-      assert_equal(false, @team.is_on_team("R McDonald"))
+    assert_equal(false, @team.is_on_team("R McDonald"))
   end 
+
+  def test_points_added_win
+    @team.win_or_lose("win")
+    assert_equal(1, @team.points)
+  end
+
+  def test_points_added_lose
+    @team.win_or_lose("lose")
+      assert_equal(0, @team.points)
+  end
 
 
 
