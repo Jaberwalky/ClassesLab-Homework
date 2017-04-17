@@ -28,4 +28,13 @@ class Team
     @players << new_player
   end
 
+  def is_on_team(name_to_check)
+    for player in @players 
+      if player == name_to_check
+        return true
+      end
+    end
+    return false
+  end
+
 end

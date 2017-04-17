@@ -33,6 +33,14 @@ class TestSportsTeam < Minitest::Test
     assert_equal(10, @team.players().length())
   end 
 
+  def test_check_if_player_is_on_team__true
+    assert_equal(true, @team.is_on_team("L Stevenson"))
+  end 
+
+  def test_check_if_player_is_on_team__false
+      assert_equal(false, @team.is_on_team("R McDonald"))
+  end 
+
 
 
 end
