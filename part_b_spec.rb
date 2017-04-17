@@ -10,20 +10,20 @@ class TestSportsTeam < Minitest::Test
   end
 
   def test_get_name
-    assert_equal("Hibernian FC", @team.get_name())
+    assert_equal("Hibernian FC", @team.name())
   end
 
   def test_get_players
-    assert_equal(@team_members, @team.get_players)
+    assert_equal(@team_members, @team.players())
   end
 
   def test_get_coach
-    assert_equal("N Lennon", @team.get_coach())
+    assert_equal("N Lennon", @team.coach())
   end
 
   def test_set_coach_name
-    @team.set_coach_name("G Parker")
-    assert_equal("G Parker", @team.get_coach())
+    @team.coach = "G Parker"
+    assert_equal("G Parker", @team.coach())
   end
 
 
